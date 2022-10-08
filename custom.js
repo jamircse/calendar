@@ -1,6 +1,6 @@
 "use strict"
  const date =new Date();
- const months=["January","february","March","April","May","June","July","August","September","October","November","December"];
+ const months=["January","February","March","April","May","June","July","August","September","October","November","December"];
  const days=["Sunday","Monday","Tuersday","WednesDay","Thursday","Friday","Saturday"]
 
  var createcalender=()=>{
