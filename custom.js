@@ -32,11 +32,12 @@ for (let index =1; index <=lastdaycurrentmonth; index++) {
 
  }
 //  // next month
- for (let index =1; index <firstdaycurrentmonthindex; index++) {
+ for (let index =1; index <firstday_index__of_cuttent_month; index++) {
     dates+=`<div class="next_date">${index}</div>`;
  }
  dateshedule.innerHTML=dates;
  dates="";
 
 document.querySelector(".current_month h2").innerHTML=current_month_name;
+document.querySelector(".current_month h4").innerHTML=`${currentdayname} ${currentdate} ${current_month_name} ${current_year}`;
  
