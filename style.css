@@ -95,3 +95,6 @@
 .prev_date,.next_date{
     opacity:0.4;
 }
+.pre,.next{
+    cursor:pointer;   
+}
