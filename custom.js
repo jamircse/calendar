@@ -3,7 +3,7 @@
  const months=["January","february","March","April","May","June","July","August","September","October","November","December"];
  const days=["Sunday","Monday","Tuersday","WednesDay","Thursday","Friday","Saturday"]
 
- var calender=()=>{
+ var createcalender=()=>{
    var currentdayindex=date.getDay();
    var currentdayname=days[date.getDay()];
    var currentdate=date.getDate();
@@ -48,18 +48,18 @@ for (let index =1; index <=lastdaycurrentmonth; index++) {
  var nextbtn=document.querySelector(".next");
  nextbtn.addEventListener("click",()=>{
     date.setMonth(date.getMonth()+1);
-    calendar();
+    createcalender();
     
  });
 // pre month
  var prebtn=document.querySelector(".pre");
  prebtn.addEventListener("click",()=>{
     date.setMonth(date.getMonth()-1);
-    calendar();
+    createcalender();
     
  });
 
-calendar();
+createcalender();
 
 
 
