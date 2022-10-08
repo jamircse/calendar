@@ -13,7 +13,17 @@
  let firstday_index__of_cuttent_month=new Date(current_year,current_monthindex,1).getDay();
  let lastdaycurrentmonth=new Date(current_year,current_monthindex+1,0).getDate();
  let premontlastdate=new Date(current_year,current_monthindex,0).getDate();
- 
+
+// next month
+ var nextbtn=document.querySelector(".next");
+ nextbtn.addEventListener("click",()=>{
+    current_monthindex+=1;
+    console.log(current_monthindex);
+ });
+
+
+
+
 var dateshedule=document.querySelector(".date");
  var dates=" ";
 
