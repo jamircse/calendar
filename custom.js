@@ -3,6 +3,14 @@
  const months=["January","february","March","April","May","June","July","August","September","October","November","December"];
  const days=["Sunday","Monday","Tuersday","WednesDay","Thursday","Friday","Saturday"]
 
+ var calender=(month)=>{
+   var current_year=date.getFullYear();
+   var currentdayindex=date.getDay();
+  
+   let firstday_index__of_cuttent_month=new Date(current_year,current_monthindex,1).getDay();
+   let lastdaycurrentmonth=new Date(current_year,current_monthindex+1,0).getDate();
+   let premontlastdate=new Date(current_year,current_monthindex,0).getDate();
+ }
  
  var currentdayindex=date.getDay();
  var currentdayname=days[date.getDay()];
@@ -18,7 +26,8 @@
  var nextbtn=document.querySelector(".next");
  nextbtn.addEventListener("click",()=>{
     current_monthindex+=1;
-    console.log(current_monthindex);
+    dateshedule.innerHTML="";
+    
  });
 
 
