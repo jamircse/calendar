@@ -36,6 +36,7 @@ for (let index =1; index <=lastdaycurrentmonth; index++) {
     dates+=`<div class="next_date">${index}</div>`;
  }
  dateshedule.innerHTML=dates;
+console.log(dateshedule);
  dates="";
 
  
